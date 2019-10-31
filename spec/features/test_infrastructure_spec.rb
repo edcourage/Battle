@@ -21,5 +21,13 @@ feature "Local output tests" do
       click_on "Ed Attack!"
       expect(page).to have_text("Ed has Attacked!")
     end
+
+    scenario "player 2 loses 10HP when attacked" do
+      sign_in_and_play
+      click_on "Ed Attack!"
+      click_on "Ok"
+      expect(page).to have_text("Topher: 90HP")
+
+    end
   end
 end
