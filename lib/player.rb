@@ -11,7 +11,5 @@ class Player
     @hp -= 10
   end
 
-  def attack(player)
-    player.remove_hp
-  end
+  
 end

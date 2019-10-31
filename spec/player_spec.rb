@@ -19,12 +19,6 @@ describe Player do
       expect { player.remove_hp }.to change { player.hp }.by -10
     end
 
-  context "#attack_player" do
-    it "remove hit poins of player passed in as argument" do
-      player_2 = Player.new("Fred")
-      expect { player.attack(player_2)}.to change { player_2.hp }.by -10
 
-    end
-  end
   end
 end
