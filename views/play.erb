@@ -1,7 +1,7 @@
-  <h1><%=@player_1.name%> vs <%=@player_2.name%></h1>
+  <h1><%=@game.players[:player_1].name%> vs <%=@game.players[:player_2].name%></h1>
 
-    <p><%=@player_2.name%>: <%=@player_2.hp%>HP</p>
+    <p><%=@game.players[:player_2].name%>: <%=@game.players[:player_2].hp%>HP</p>
 
     <form action="/attack" >
-      <input type="submit" value="<%=@player_1.name%> Attack!">
+      <input type="submit" value="<%=@game.players[:player_1].name%> Attack!">
       </form>
